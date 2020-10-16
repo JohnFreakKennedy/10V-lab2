@@ -17,33 +17,33 @@ int main() {
     cin>>ya;
     cout<<"Put x-coordinate for the 2 top: ";
     cin>>xb;
-    cout<<"Put y-coordinate for the 2 top: ";;
+    cout<<"Put y-coordinate for the 2 top: ";
     cin>>yb;
-    cout<<"Put x-coordinate for the 3 top: ";;
+    cout<<"Put x-coordinate for the 3 top: ";
     cin>>xc;
-    cout<<"Put y-coordinate for the 3 top: ";;
+    cout<<"Put y-coordinate for the 3 top: ";
     cin>>yc;
     ab=(xb-xa)*(xb-xa)+(yb-ya)*(yb-ya);
     ac=(xc-xa)*(xc-xa)+(yc-ya)*(yc-ya);
     bc=(xc-xb)*(xc-xb)+(yc-yb)*(yc-yb);
     if(ab==ac || ac==bc || bc==ab )
     {
-     cout<<"Ïðÿìîêóòíèé ";
+     cout<<"ÃÃ°Ã¿Ã¬Ã®ÃªÃ³Ã²Ã­Ã¨Ã© ";
     }
     ab=sqrt(ab);
     ac=sqrt(ac);
     bc=sqrt(bc);
     if(ab==ac==bc)
     {
-    cout<<"Ðiâíîñòîðîííié";
+    cout<<"ÃiÃ¢Ã­Ã®Ã±Ã²Ã®Ã°Ã®Ã­Ã­iÃ©";
     }
     else if(ac==ab || ab==bc || bc==ac )
     {
-    cout<<"Ðiâíîáåäðåíèé";
+    cout<<"ÃiÃ¢Ã­Ã®Ã¡Ã¥Ã¤Ã°Ã¥Ã­Ã¨Ã©";
     }
     else
     {
-    cout<<"Ðiçíîñòîðîííié";
+    cout<<"ÃiÃ§Ã­Ã®Ã±Ã²Ã®Ã°Ã®Ã­Ã­iÃ©";
     }
     return 0;
     //cout<<endl<<ab<<" "<<bc<<" "<<ac<<endl;
