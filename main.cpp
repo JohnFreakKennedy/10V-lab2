@@ -1,7 +1,6 @@
 #include <iostream>
-#include <math.h>
-#include <locale.h>
-
+#include <cmath>
+#include <clocale>
 
 
 using namespace std;
@@ -26,27 +25,27 @@ int main() {
     ab=(xb-xa)*(xb-xa)+(yb-ya)*(yb-ya);
     ac=(xc-xa)*(xc-xa)+(yc-ya)*(yc-ya);
     bc=(xc-xb)*(xc-xb)+(yc-yb)*(yc-yb);
-    if(ab==ac || ac==bc || bc==ab )
+    if(ab+bc == ac || ac+ab == bc || bc+ac == ab )
     {
-     cout<<"Ïðÿìîêóòíèé ";
+     cout<<"Прямокутний ";
     }
     ab=sqrt(ab);
     ac=sqrt(ac);
     bc=sqrt(bc);
     if(ab==ac==bc)
     {
-    cout<<"Ðiâíîñòîðîííié";
+    cout<<"Рiвностороннiй";
     }
     else if(ac==ab || ab==bc || bc==ac )
     {
-    cout<<"Ðiâíîáåäðåíèé";
+    cout<<"Рiвнобедрений";
     }
     else
     {
-    cout<<"Ðiçíîñòîðîííié";
+    cout<<"Рiзностороннiй";
     }
     return 0;
-    //cout<<endl<<ab<<" "<<bc<<" "<<ac<<endl;
+
 
 
 }
