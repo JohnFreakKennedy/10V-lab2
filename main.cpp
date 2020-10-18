@@ -10,17 +10,17 @@ int main() {
     setlocale (LC_ALL, "Russian");
     float xa, ya, xb, yb, xc, yc, ab, bc, ac;
 
-    cout<< " Dankov Artem,IS-01,10V "<<endl<<"Put x-coordinate for the 1 top: ";
+    cout<< " Dankov Artem,IS-01,10V "<<endl<<"Put x-coordinate for the 1 apex: ";
     cin>>xa;
-    cout<< "Put y-coordinate for the 1 top: ";
+    cout<< "Put y-coordinate for the 1 apex: ";
     cin>>ya;
-    cout<<"Put x-coordinate for the 2 top: ";
+    cout<<"Put x-coordinate for the 2 apex: ";
     cin>>xb;
-    cout<<"Put y-coordinate for the 2 top: ";
+    cout<<"Put y-coordinate for the 2 apex: ";
     cin>>yb;
-    cout<<"Put x-coordinate for the 3 top: ";
+    cout<<"Put x-coordinate for the 3 apex: ";
     cin>>xc;
-    cout<<"Put y-coordinate for the 3 top: ";
+    cout<<"Put y-coordinate for the 3 apex: ";
     cin>>yc;
     ab=(xb-xa)*(xb-xa)+(yb-ya)*(yb-ya);
     ac=(xc-xa)*(xc-xa)+(yc-ya)*(yc-ya);
